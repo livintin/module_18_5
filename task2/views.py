@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 def index1(requests):
-    return render(requests, 'index2.html')
+    return render(requests, 'games.html')
 
 class index2(TemplateView):
-    template_name = 'index1.html'
+    template_namae = 'cart.html'

@@ -1,0 +1,19 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    <h1>Игры</h1>
+{% endblock %}
+
+{% block menu %}
+    <a href="http://127.0.0.1:8084">Главная</a><br>
+    <a href="http://127.0.0.1:8084/platform/games">Магазин</a><br>
+    <a href="http://127.0.0.1:8084/platform/cart">Корзина</a><br>
+{% endblock %}
+{% block content %}
+    <h1>Игры</h1>
+    <ul>
+        {% for game in games %}
+            <li>{{ game }}<button>Купить</button><br></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
